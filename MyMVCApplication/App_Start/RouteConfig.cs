@@ -20,6 +20,12 @@ namespace MyMVCApplication
             );
 
             routes.MapRoute(
+                name: "signin",
+                url: "signin/{id}",
+                defaults: new { controller = "signin", action = "Index" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

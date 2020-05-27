@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MyMVCApplication.Models.signin>
+
+@{
+    ViewBag.Title = "ARAS Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ARAS Login</h2>
+
+
+URL:        @Html.Editor("URL") <br>
+Database:   @Html.Editor("Database") <br>
+Login ID:   @Html.Editor("LoginId") <br>
+Password:   @Html.Editor("Password")
+
